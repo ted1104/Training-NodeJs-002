@@ -10,7 +10,8 @@ const start = async () => {
     const second = await readFile("./content/second.txt", "utf-8");
     await writeFile(
       "./content/result-mind-await-third.txt",
-      `THIS AWESOME ${first} ${second}`
+      `THIS AWESOME ${first} ${second}`,
+      { flag: "a" }
     );
     console.log(first, second);
   } catch (err) {
