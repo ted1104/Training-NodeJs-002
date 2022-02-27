@@ -1,5 +1,5 @@
 //EVENT LOOP : SetInterval
-// setInterval is also an asyn method
+// setInterval is also an async method
 console.log("first");
 setInterval(() => {
   console.log("second");

@@ -1,6 +1,6 @@
 const { readFile, writeFile } = require("fs");
 
-// nested async function with callback
+// nested async function with callback :: toutes les fonctions qui prennent callback sont asynchronne
 // readFile("./content/first.txt", "utf-8", (err, data) => {
 //   if (err) {
 //     return;
@@ -35,12 +35,12 @@ const writeText = (content) => {
   });
 };
 
-//1st method to invoque function that return promise
+//1st method to invoque function that return promise with then and catch
 // getText("./content/first.txt")
 //   .then((result) => console.log(result))
 //   .catch((err) => console.log(err));
 
-//2nd method to invoque function that return promise
+//2nd method to invoque function that return promise with async and await
 const start = async () => {
   try {
     const first = await getText("./content/first.txt");
